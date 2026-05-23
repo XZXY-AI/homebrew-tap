@@ -5,21 +5,21 @@
 class CcgRouter < Formula
   desc "Unified local router for Claude Code and Codex CLI"
   homepage "https://github.com/XZXY-AI/ccg-router"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/XZXY-AI/ccg-router/releases/download/v0.3.0/ccg-router_0.3.0_darwin_amd64.tar.gz"
-      sha256 "eb789b8a3b0735abe74411ec3ef66305b40cd7f3e1dfa58cf2c79bcae9a59b35"
+      url "https://github.com/XZXY-AI/ccg-router/releases/download/v0.3.1/ccg-router_0.3.1_darwin_amd64.tar.gz"
+      sha256 "8f639f4e93fdf4754bcc721201176cd9e6acafeb666cdb2fea50ca971f553e36"
 
       define_method(:install) do
         bin.install "ccg-router"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/XZXY-AI/ccg-router/releases/download/v0.3.0/ccg-router_0.3.0_darwin_arm64.tar.gz"
-      sha256 "b4acee4172df79ecdca5873cab97688cb3ca71cfb876cb36424985c16c7034cb"
+      url "https://github.com/XZXY-AI/ccg-router/releases/download/v0.3.1/ccg-router_0.3.1_darwin_arm64.tar.gz"
+      sha256 "94f8808fc8d4ba46e5bfe50a2dae0b7f11ee8ccf2bf58c57c65a72b2a22d90e0"
 
       define_method(:install) do
         bin.install "ccg-router"
@@ -29,15 +29,15 @@ class CcgRouter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/XZXY-AI/ccg-router/releases/download/v0.3.0/ccg-router_0.3.0_linux_amd64.tar.gz"
-      sha256 "6baf0f6f6fb233f0ae3eba0cb2d1440f6604aa4e7944040b00a4953fad15517f"
+      url "https://github.com/XZXY-AI/ccg-router/releases/download/v0.3.1/ccg-router_0.3.1_linux_amd64.tar.gz"
+      sha256 "43bc4ff7e11ea85e41f276cba389c664ce10df2d4e3c097dc6f404aa20a4feb5"
       define_method(:install) do
         bin.install "ccg-router"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/XZXY-AI/ccg-router/releases/download/v0.3.0/ccg-router_0.3.0_linux_arm64.tar.gz"
-      sha256 "a0995cbb68400d3b2114f993a0b1d232b3d3214fadbb2b9d7a67f8b2e2ef26e1"
+      url "https://github.com/XZXY-AI/ccg-router/releases/download/v0.3.1/ccg-router_0.3.1_linux_arm64.tar.gz"
+      sha256 "ae0cb9505c2a4e72c4468aa779c29d7d2823c01680927c88d8073f7fadebfd71"
       define_method(:install) do
         bin.install "ccg-router"
       end
